@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fortelix Engineers - Civil & Structural Consultants in Chennai. Structural design, detailing and BIM structural modelling.">
+  <title>Fortelix Engineers | Civil & Structural Consultants</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>☎ <a href="tel:+914435915175">044-35915175</a> / <a href="tel:+919344900723">9344900723</a></div>
+    <div>✉ <a href="mailto:info@fortelixengineers.com">info@fortelixengineers.com</a></div>
+    <div>⌖ No.12A, Ambal Nagar Main Road, Bhaskar Nagar, Keelkattalai, Chennai – 600117</div>
+  </header>
+
+  <nav class="nav">
+    <a class="brand" href="#home"><img src="logo.png" alt="Fortelix Engineers logo"></a>
+    <button class="menu" aria-label="Open menu">☰</button>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#bim">BIM Modeling</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CIVIL &amp; STRUCTURAL CONSULTANTS</p>
+        <h1>Engineering <span>Strength.</span><br>Building <span>Confidence.</span></h1>
+        <p class="lead">Fortelix Engineers provides professional structural design, detailing and BIM structural modelling services for buildings and steel structures.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#services">Our Services</a>
+          <a class="btn secondary" href="#contact">Contact Us</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Structural engineering illustration">
+        <div class="tower tower1"></div><div class="tower tower2"></div><div class="tower tower3"></div>
+        <div class="beam"></div><div class="column c1"></div><div class="column c2"></div><div class="column c3"></div>
+        <div class="slab s1"></div><div class="slab s2"></div><div class="slab s3"></div><div class="slab s4"></div>
+        <div class="crane"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div>
+        <p class="eyebrow">ABOUT FORTELIX ENGINEERS</p>
+        <h2>Professional Structural Engineering Solutions</h2>
+      </div>
+      <div>
+        <p>Fortelix Engineers is a civil and structural consultancy based in Chennai, providing practical and professional engineering services for building and structural projects.</p>
+        <p>Our focus is on safe, efficient and well-detailed structural solutions, supported by modern BIM workflows and clear engineering documentation.</p>
+        <div class="principal">
+          <strong>M. Dhanasekaran</strong>
+          <span>M.Tech. (Structural Engineering)</span>
+          <span>Principal Structural Consultant</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <p class="eyebrow">WHAT WE DO</p>
+      <h2>Our Services</h2>
+      <div class="cards">
+        <article class="card"><div class="icon">▥</div><h3>Structural Design &amp; Detailing</h3><p>Structural design and detailed drawings for RCC and steel structures with practical engineering solutions.</p></article>
+        <article class="card"><div class="icon">◈</div><h3>BIM Structural Modeling</h3><p>3D structural modelling for coordination, visualization, documentation and project efficiency.</p></article>
+        <article class="card"><div class="icon">⌁</div><h3>Structural Analysis</h3><p>Engineering analysis and design support for safe and efficient structural systems.</p></article>
+        <article class="card"><div class="icon">▤</div><h3>Structural Drawings</h3><p>Clear structural drawings and detailing suitable for construction and project coordination.</p></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section dark">
+      <div>
+        <p class="eyebrow orange">PROJECTS</p>
+        <h2>Structural Engineering for Different Building Types</h2>
+        <p>We provide structural engineering support for residential, commercial, industrial and other building projects, including RCC and steel structures.</p>
+      </div>
+      <div class="project-grid">
+        <div>RCC Buildings</div><div>Steel Structures</div><div>Commercial Buildings</div><div>Industrial Structures</div>
+      </div>
+    </section>
+
+    <section id="bim" class="section bim">
+      <div class="bim-box">
+        <p class="eyebrow">BIM STRUCTURAL MODELING</p>
+        <h2>From Structural Design to Coordinated BIM Models</h2>
+        <p>Our BIM structural modelling service supports better coordination between structural design, drawings and project execution.</p>
+        <a class="btn primary" href="#contact">Discuss Your Project</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div>
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>Let's Discuss Your Structural Project</h2>
+        <p>Contact Fortelix Engineers for structural design, detailing and BIM structural modelling requirements.</p>
+      </div>
+      <div class="contact-box">
+        <p><strong>Address</strong><br>No.12A, Ambal Nagar Main Road,<br>Bhaskar Nagar, Keelkattalai,<br>Chennai – 600117</p>
+        <p><strong>Phone</strong><br><a href="tel:+914435915175">044-35915175</a><br><a href="tel:+919344900723">9344900723</a></p>
+        <p><strong>Email</strong><br><a href="mailto:info@fortelixengineers.com">info@fortelixengineers.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="logo.png" alt="Fortelix Engineers">
+    <p>FORTELIX ENGINEERS · CIVIL &amp; STRUCTURAL CONSULTANTS</p>
+    <p>© 2026 Fortelix Engineers. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menu = document.querySelector('.menu');
+    const links = document.querySelector('.links');
+    menu.addEventListener('click', () => links.classList.toggle('open'));
+    document.querySelectorAll('.links a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+  </script>
+</body>
+</html>
