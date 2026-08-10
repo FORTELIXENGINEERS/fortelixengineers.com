@@ -144,3 +144,151 @@ footer{background:var(--navy);color:#fff}
   .about h2,.contact h2{font-size:31px}.bim h2{font-size:34px}.bim-visual{height:270px}
   .footer-inner{justify-content:center;text-align:center}.footer-brand{align-items:center}.footer-inner img{width:135px}.copyright{text-align:center}
 }
+
+
+/* =========================================================
+   FORTELIX DESKTOP WIDTH / ZOOM CORRECTION
+   Mobile rules below remain unchanged.
+   ========================================================= */
+
+/* Use the available desktop viewport without creating a
+   narrow centered page. */
+@media (min-width: 801px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .top-inner {
+    max-width: none;
+    width: 100%;
+    padding-left: clamp(24px, 3vw, 55px);
+    padding-right: clamp(24px, 3vw, 55px);
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .brand {
+    left: clamp(24px, 4vw, 70px);
+    width: clamp(320px, 27vw, 440px);
+  }
+
+  .nav-links {
+    margin-left: clamp(230px, 22vw, 370px);
+    gap: clamp(28px, 3.4vw, 60px);
+  }
+
+  .hero {
+    width: 100%;
+    grid-template-columns: minmax(400px, 40%) minmax(0, 60%);
+  }
+
+  .hero-copy {
+    padding-left: clamp(30px, 5vw, 90px);
+    padding-right: clamp(24px, 3vw, 60px);
+  }
+
+  .hero h1 {
+    font-size: clamp(32px, 3vw, 48px);
+  }
+
+  .hero-copy > p {
+    font-size: clamp(14px, 1.1vw, 17px);
+  }
+
+  .services-wrap {
+    width: 100%;
+    max-width: none;
+    padding-left: clamp(18px, 3vw, 55px);
+    padding-right: clamp(18px, 3vw, 55px);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(14px, 1.8vw, 30px);
+  }
+
+  .service-card {
+    min-width: 0;
+  }
+
+  .service-card h3 {
+    font-size: clamp(12px, 1vw, 15px);
+  }
+
+  .service-card p {
+    font-size: clamp(10px, .82vw, 13px);
+  }
+
+  .stats {
+    width: calc(100% - clamp(36px, 6vw, 110px));
+    max-width: none;
+    margin-left: clamp(18px, 3vw, 55px);
+    margin-right: clamp(18px, 3vw, 55px);
+  }
+
+  .stat {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .stat strong {
+    font-size: clamp(22px, 2vw, 31px);
+  }
+
+  .stat span {
+    font-size: clamp(10px, .85vw, 13px);
+  }
+
+  .lower-grid {
+    width: 100%;
+    max-width: none;
+    padding-left: clamp(18px, 3vw, 55px);
+    padding-right: clamp(18px, 3vw, 55px);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .about {
+    min-width: 0;
+  }
+
+  .about-copy {
+    min-width: 0;
+  }
+
+  .bim {
+    min-width: 0;
+  }
+
+  .bim-visual {
+    min-width: 0;
+  }
+
+  footer {
+    width: 100%;
+    max-width: none;
+    padding-left: clamp(24px, 4vw, 70px);
+    padding-right: clamp(24px, 4vw, 70px);
+  }
+}
+
+/* Extra-wide desktop monitors: scale the design naturally
+   rather than keeping a small fixed canvas in the middle. */
+@media (min-width: 1500px) {
+  .hero {
+    height: clamp(315px, 23vw, 440px);
+  }
+
+  .service-card {
+    height: clamp(205px, 15vw, 255px);
+  }
+
+  .about-card,
+  .bim,
+  .bim-visual {
+    min-height: clamp(232px, 17vw, 350px);
+  }
+
+  .bim h2 {
+    font-size: clamp(26px, 2.4vw, 40px);
+  }
+}
