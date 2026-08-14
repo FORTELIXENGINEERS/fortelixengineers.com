@@ -216,13 +216,6 @@ footer{background:var(--navy);color:#fff}
 }
 
 
-/* Office address location icon */
-.contact-details .office-address strong{display:flex;align-items:center;gap:7px}
-.address-icon{width:16px;height:16px;display:inline-flex;align-items:center;justify-content:center;color:var(--orange)}
-.address-icon svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-
-.address-map-link{display:inline-flex;align-items:center;text-decoration:none;color:inherit}.address-map-link:hover .address-icon{color:var(--navy)}
-
 /* Clickable Office map link */
 .contact-details>a.office-address{
   cursor:pointer;
